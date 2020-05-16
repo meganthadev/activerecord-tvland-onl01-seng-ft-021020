@@ -1,4 +1,6 @@
 class Actor < ActiveRecord::Base
+
+  attr_accessor :first_name, :last_name
   has_many :characters
   has_many :shows, through: :characters  
 
